@@ -19,21 +19,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@Preview(showBackground = true)
+
+
 @Composable
-fun PlayActivity(){
+fun PlayActivity(modifier: Modifier) {
     Column (modifier = Modifier.fillMaxSize()){
         HeaderSection()
         Text(text = "Kepada Yth,",
             modifier = Modifier.padding(16.dp))
         Text(text = "Ira Jesica Januari S",
-            modifier = Modifier.padding(16.dp))
-        Spacer(modifier = Modifier.size(50.dp))
+            modifier = Modifier.padding(5.dp))
+        Spacer(modifier = Modifier.size(15.dp))
         DetailSurat(
             judul = "Nama",
             isinya = "Ira"
